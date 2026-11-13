@@ -12,6 +12,9 @@ public class Bullet : MonoBehaviour
     private const int friendlyBulletLayer = 7; //Està definit a les layers de física
     private const int enemyBulletLayer = 9;
 
+    [SerializeField] private float impulseColssionForce = 10.0f;
+
+
     [SerializeField]
     private GameObject playerHit;
     [SerializeField]
@@ -62,6 +65,9 @@ public class Bullet : MonoBehaviour
             SpriteRenderer bodySprite = body.GetComponentInChildren<SpriteRenderer>();
             Color bodyColor = bodySprite != null ? bodySprite.color : Color.white;
             BulletVfx.BodyImpact(point, -normal, bodyColor);
+
+            Rigidbody2D rb = body.GetComponent<Rigidbody2D>();
+            rb.AddForce(transform.up * impulseColssionForce, ForceMode2D.Impulse);
         }
         else
         {
