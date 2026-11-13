@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     private const int friendlyBulletLayer = 7; //Està definit a les layers de física
     private const int enemyBulletLayer = 9;
 
-    [SerializeField] private float impulseColssionForce = 10.0f;
+    [SerializeField] private float impulseColssionForce = 25.0f;
 
 
     [SerializeField]

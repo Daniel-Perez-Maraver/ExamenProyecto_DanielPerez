@@ -327,8 +327,8 @@ GameObject:
   - component: {fileID: 4528647499625496261}
   - component: {fileID: 5983521735543505683}
   - component: {fileID: 8764216373453147388}
-  - component: {fileID: 700881491883955303}
   - component: {fileID: 8921753393585636976}
+  - component: {fileID: 700881491883955303}
   - component: {fileID: 2096430733273803357}
   m_Layer: 8
   m_Name: EnemyRifle
@@ -404,6 +404,21 @@ MonoBehaviour:
   bulletImpulseForce: 10
   isFriendly: 0
   shotAudio: {fileID: 4696659908597697056}
+--- !u!114 &8921753393585636976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110065093432645662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b339cc6415f52a246aa71636a26fcdb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AIControllerRifle
+  gun: {fileID: 8764216373453147388}
+  healthSystem: {fileID: 5983521735543505683}
+  deathTimer: {fileID: 4528647499625496261}
 --- !u!50 &700881491883955303
 Rigidbody2D:
   serializedVersion: 5
@@ -431,21 +446,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &8921753393585636976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110065093432645662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b339cc6415f52a246aa71636a26fcdb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AIControllerRifle
-  gun: {fileID: 8764216373453147388}
-  healthSystem: {fileID: 5983521735543505683}
-  deathTimer: {fileID: 4528647499625496261}
 --- !u!60 &2096430733273803357
 PolygonCollider2D:
   m_ObjectHideFlags: 0
