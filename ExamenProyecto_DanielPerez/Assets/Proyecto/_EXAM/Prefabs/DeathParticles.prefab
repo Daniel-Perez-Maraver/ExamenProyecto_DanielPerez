@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1469449303062342473}
   - component: {fileID: 3888529277868958256}
   - component: {fileID: 49218487649792765}
+  - component: {fileID: 6505206233671735570}
   m_Layer: 0
   m_Name: DeathParticles
   m_TagString: Untagged
@@ -5008,6 +5009,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!164 &6505206233671735570
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134851655216501614}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 2.91
+  m_DecayHFRatio: 1.3
+  m_ReflectionsLevel: -602
+  m_ReverbLevel: 2000
+  m_ReverbDelay: 0.022
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 27
 --- !u!1 &8194477347758353670
 GameObject:
   m_ObjectHideFlags: 0
